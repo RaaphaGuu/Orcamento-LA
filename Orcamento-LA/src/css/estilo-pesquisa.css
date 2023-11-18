@@ -1,0 +1,23 @@
+body{
+  text-transform: uppercase;
+}
+
+table {
+    
+    width: 80%;   
+    background-color: lightgray;
+    border: 1px solid black;
+    border-spacing: 0;
+    margin: auto;
+  }
+  
+  td { height: 30px; 
+    text-align: center; 
+    font-family: Arial; 
+    font-size: 14px; }
+
+  th { background-color: lightblue;
+     font-family: Arial;
+      font-weight: bold; }
+
+  

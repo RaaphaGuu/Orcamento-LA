@@ -1,0 +1,73 @@
+.cabecalho-imagem {
+  height: 150px;
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 12px;
+
+}
+
+.topo .h1{
+  display: flex;
+  justify-items: end;
+  text-transform: uppercase;
+}
+
+.conteudo {
+  text-align: center;
+}
+.tbody{
+  display: flex;
+  justify-content: space-between;
+}
+.table{
+  display: flex;
+  justify-content: space-between;
+  color: antiquewhite;
+  }
+
+ /* button{
+  background-color: #0f6a12;
+ Green 
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0px 0px;
+  -webkit-transition-duration: 0.64s;
+  /* Safari 
+  transition-duration: 0.54s;
+  cursor: pointer;
+}*/
+
+h2{
+  text-align: center;
+}
+
+h3 {
+  display: flex;
+  font-size: 12px;
+  text-align: justify;
+
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+
+}
+
+footer {
+
+  border-radius: 10px;
+  text-align: center;
+
+}
+

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="disciptio" content=" Formulário para inclusão de informações de Maquinas e serviços">
+    <link rel=" stylesheet" href="./src/css/estilo.css">
+    <!--<link rel="stylesheet" href="./src/css/reset.css">
+    -->
+        <title>L.A Maquinario</title>
+</head>
+
+<body>
+    
+    <header class="cabecalho">
+        <!--<img class="cabecalho-imagem" src="./src/img/logo2.png" alt="Logo . ">-->
+        <h1> REGISTRO DE SOLICITAÇÃO </h1><br>
+    <img name="whatsaap" src="./src/img/whatsapp.png" width="30px" alt="whatsapp"> <a href="https://web.whatsapp.com">Whatsaap</a>
+    <img src="./src/img/facebook.png" width="30px" alt="facebook"> <a href="www.facebook.com">Facebook</a>
+    <img src="./src/img/localiza.png" width="30px" alt="localização"><a href="www.google.com.br/maps/dir//R.+Carlos+Drummond+de+Andrade,+286+-+Jardim+Amanda+I,+Hortol%C3%A2ndia+-+SP,+13188-249/@-22.9044273,-47.2405779,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x94c8bbb6d3f0cc1d:0xb3df36929e4d041a!2m2!1d-47.2383892!2d-22.9044323!3e0">localização</a>
+        </header>
+
+
+    <section class="setor-pesquisa">
+        <form method="POST" action="pesquisa.php">
+            <input type="search" name="pesquisa" placeholder="Digite sua pesquisa aqui">
+            <button>Pesquisar</button>
+          </form>
+    </section>    
+    <fieldset>
+           
+            <form action="OSLA.php" method="POST"> 
+    <section class="cadastro-cliente"> 
+ 
+        <legend>CADASTRO CLIENTE:</legend>
+                <label>Data do registro: </label><input class="conteudo-data" type="datetime-local" name="data_registro" required>
+                <label>Nome do Cliente: </label><input class="conteudo-registro" type="text" name="nome" required>
+                <label>Endereço: </label><input class="conteudo-registro" type="text" name="endereco" required>
+                <label>Doc.: </label><input class="conteudo-registro" type="text" name=" RG" required>
+                <label>Telefone:</label><input class="conteudo-registro" type="text" name="telefone" required>
+       
+    </section>
+   </fieldset>
+
+<fieldset>
+    <section class="cadastro-manutencao">
+        
+            <legend>DESCRIÇÃO DO SERVIÇO</legend>
+           
+            <!--<label> Data Orçamento: </label><input class="conteudo-data" type="datetime-local" name="data_orcamento"
+                required>-->
+            <label>Equipamento:</label>
+            <!--<select id="selecao-equipamento" name="equipamento" id="selecionado" required>
+                <option class="equipamento-item" value=" ">Selecione</option>
+                <option class="equipamento-item" value="Roçadeiras a Gasolina">Roçadeiras a Gasolina</option>
+                <option class="equipamento-item" value="Cortador de Grama a Gasolina">Cortador de Grama a Gasolina</option>
+                <option class="equipamento-item" value="Cortador de Grama Elétrica">Cortador de Grama Elétrica</option>
+                <option class="equipamento-item" value="Motoserra">Motoserra</option>
+                <option  class="equipamento-item" value="Outros">Outros(é para abrir um box para a descrição dom)
+                </option>
+            </select>-->
+            <label>Equipamento:</label>
+<select id="selecao-equipamento" name="equipamento" id="selecionado" required onchange="showInput(this)">
+  <option class="equipamento-item" value=" ">Selecione</option>
+  <option class="equipamento-item" value="Roçadeiras a Gasolina">Roçadeiras a Gasolina</option>
+  <option class="equipamento-item" value="Cortador de Grama a Gasolina">Cortador de Grama a Gasolina</option>
+  <option class="equipamento-item" value="Cortador de Grama Elétrica">Cortador de Grama Elétrica</option>
+  <option class="equipamento-item" value="Motoserra">Motoserra</option>
+  <option class="equipamento-item" value="Outros">Outros</option>
+
+</select><div id="input-container"></div>
+            <label>Serviço: </label>
+            <select id="servico" name="servico" required>
+                <option class="servico-seleção" value=" ">Selecione</option>
+                <option class="servico-seleção" value="Manutenção">Manutenção</option>
+                <option class="servico-seleção" value="Revisão">Revisão</option>
+                <option class="servico-seleção" value="Limpeza">Limpeza</option>
+                <option class="servico-seleção" value="Outros"> Outros</option>
+            </select>
+
+           <!--  <label>Numero de Chassi:</label> <input type="text" name="Nchassi" required>-->
+            <label>Série:</label> <input type="text" name="serie" required>
+            <label>Modelo:</label> <input type="text" name="modelo" required>
+            <button class="btn-principal-registro" type="submit" name="submit">CADASTRAR INFORMAÇÕES</button>
+        
+     </form>
+    </form>
+  
+    </section><script src="./src/js/index.js"></script>
+</fieldset>
+   
+
+
+</body>
+    <footer class="rodape">
+
+        <p>FONE P/ CONTATO (19) 9 9999-9999 </p>
+    </footer>
+
+
+</html>
